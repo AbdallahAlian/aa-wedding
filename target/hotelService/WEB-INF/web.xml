@@ -3,14 +3,14 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
-	<display-name>ExpediaAssignment</display-name>
+	<display-name>aa-wedding</display-name>
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 
 	<servlet>
 		<servlet-name>Index Page</servlet-name>
-		<servlet-class>com.expedia.control.Controller</servlet-class>
+		<servlet-class>com.wedding.control.Controller</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Index Page</servlet-name>
