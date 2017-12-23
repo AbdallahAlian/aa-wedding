@@ -2,34 +2,28 @@
 <head>
 
 <link rel="stylesheet" href="./resources/css/bootstrap.css" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="./resources/js/counter.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
 <style>
-.container {
+.background {
 	background-image: url('./resources/images/wedding.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
-}
-
-html {
-	box-sizing: border-box;
-}
-
-*, *:before, *:after {
-	box-sizing: inherit;
+	background-size: cover;
 }
 
 ul#countdown {
 	position: relative;
-	top: 50%;
+	top: 100%;
 	transform: translateY(-50%);
 	width: 50%;
 	margin: 0 auto;
 	padding: 15px 0 20px 0;
-	color: #656668;
-	border: 1px solid #656668;
+	color: #000000;
+	border: 1px solid #000000;
 	border-width: 1px 0;
 	overflow: hidden;
 	font-family: 'Arial Narrow', Arial, sans-serif;
@@ -47,30 +41,81 @@ ul#countdown li {
 }
 
 ul#countdown li .label {
-	color: #656668;
+	color: #000000;
 	font-size: 18px;
 	font-size: 1.5vw;
 	text-transform: uppercase;
 }
 
 /*************************************************************************************************************/
-.names {
-	font-size: 3em;
+.title {
+	font-size: 4em;
 	text-align: center;
-	margin: 0 auto;
 	color: #656668;
 	font-style: italic;
+	font-family: Baskerville;
+	margin-top: 100px;
+}
+
+.date, .wedding {
+	font-size: 4em;
+	text-align: center;
+	color: #656668;
+	font-style: italic;
+	font-family: Baskerville;
+}
+
+.wedding {
+	margin-top: 50px;
+	font-style: normal;
+}
+
+.date {
+	border-top: 1px solid #575557;
+	border-bottom: 1px solid #575557;
+	font-style: normal;
+	font-size: 50px;
+	width: 350px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.info {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: 1px solid #000000;
+	width: 250px;
+	height: 100px;
+	padding: 12px;
+	position: fixed;
+}
+
+a {
+	font-style: normal;
+	color: #000000;
+}
+
+.fa {
+	color: #ffffff;
 }
 </style>
 </head>
-<body onload="startCount()">
+<body onload="startCount()" class="background">
 	<div class="container h-100 w-100">
 		<div class="row">
 			<div class="col-12">
-				<div class="names">Abdallah</div>
-				<div class="names">&</div>
-				<div class="names">Anwar</div>
-				<div class="names">Wedding</div>
+				<div class="title">Abdallah & Anwar</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="wedding">Wedding</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="date">26.03.2018</div>
 			</div>
 		</div>
 		<div class="row">
@@ -93,6 +138,28 @@ ul#countdown li .label {
 						<div class="label">Seconds</div>
 					</li>
 				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="info">
+					<div>
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<span>
+							<a href="https://www.google.jo/maps/place/Numan+Halls/@31.9927643,35.8478043,14z/data=!4m5!3m4!1s0x0:0x1c1b06e09a3e155f!8m2!3d31.992381!4d35.8647984" target="_blank">Numan Halls</a>
+						</span>
+					</div>
+					<div>
+						<i class="fa fa-building" aria-hidden="true"></i>
+						<span> Jerash chamber </span>
+					</div>
+					<div>
+						<i class="fa fa-clock-o" aria-hidden="true"></i>
+						<span>
+							Time : <i>5:00 pm - 8:00 pm</i>
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
